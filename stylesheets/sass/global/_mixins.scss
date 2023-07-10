@@ -1,0 +1,8 @@
+@use "../global/variables";
+
+@mixin flex($fw:nowrap, $jc:space-between, $ai:center) {
+    display: flex;
+    flex-wrap: $fw;
+    justify-content: $jc;
+    align-items: $ai;
+}

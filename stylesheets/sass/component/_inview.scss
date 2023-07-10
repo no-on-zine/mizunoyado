@@ -1,0 +1,10 @@
+.inview {
+    transition: 1s;
+    opacity: 0;
+    transform: translate(0, 10px);
+}
+
+.active {
+    opacity: 1.0;
+    transform: translate(0, 0);
+}
