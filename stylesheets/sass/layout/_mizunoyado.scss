@@ -1,0 +1,21 @@
+@use "../global/index"as *;
+
+#mizunoyado {
+    padding: 5rem 0;
+
+    >div {
+        &.bg_white {
+            background: rgb(255 255 255 / 70%);
+            margin: 0 auto 7rem;
+            width: 100vw;
+            padding: 6rem 0;
+            line-height: 2.5;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            font-weight: 600;
+            text-align: justify;
+            letter-spacing: 0.05rem;
+        }
+    }
+}
