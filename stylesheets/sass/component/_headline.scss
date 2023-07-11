@@ -26,3 +26,14 @@ h2 {
         }
     }
 }
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+
+    span {
+        background: url(../../images/h_bottom.svg) no-repeat 50% 100%;
+    }
+}

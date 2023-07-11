@@ -5,7 +5,7 @@
 
     >div {
         &.bg_white {
-            background: rgb(255 255 255 / 70%);
+            background: rgb(255 255 255 / 80%);
             margin: 0 auto 7rem;
             width: 100vw;
             padding: 6rem 0;
@@ -16,6 +16,27 @@
             font-weight: 600;
             text-align: justify;
             letter-spacing: 0.05rem;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                border-style: solid;
+            }
+
+            &::before {
+                bottom: 100%;
+                border-width: 7rem 100vw 0 0;
+                border-color: rgba(0, 0, 0, 0) rgba(255, 255, 255, .8) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+            }
+
+            &::after {
+                top: 100%;
+                border-width: 0 0 7rem 100vw;
+                border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(255, 255, 255, .8);
+            }
         }
     }
 }
