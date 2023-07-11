@@ -1,7 +1,27 @@
 @use "../global/index"as *;
 
 footer {
+    background: url(../../../images/bg.jpg) repeat 0 0/200%;
+    padding: 10rem 0 30rem;
+
     >div {
+
+        &:first-child {
+            background: rgb(255 255 255 / 90%);
+            font-size: 1.8rem;
+            font-family: $serif;
+            margin: 0 auto;
+            width: calc(100% - 6rem);
+            text-align: center;
+            padding: 6rem 0;
+            line-height: 2.5;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+            font-weight: 600;
+        }
+
         >a {
             display: block;
             position: fixed;
@@ -9,6 +29,14 @@ footer {
             right: 0;
             max-width: 8rem;
             box-shadow: 0 0 5px 0px #0000001c;
+        }
+
+        >div {
+            &:last-child {
+                p {
+                    margin: 0 0 2rem;
+                }
+            }
         }
     }
 }
