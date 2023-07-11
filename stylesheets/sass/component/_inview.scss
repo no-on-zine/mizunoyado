@@ -1,10 +1,13 @@
-.inview {
-    transition: 1s;
+* {
+    transition: .5s;
+}
+
+*:not(html, body, section, h1, h2, img, a, header, footer, main, .no_inview) {
     opacity: 0;
-    transform: translate(0, 10px);
+    translate: 0 10px;
 }
 
 .active {
     opacity: 1.0;
-    transform: translate(0, 0);
+    translate: 0 0;
 }

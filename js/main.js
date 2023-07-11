@@ -1,6 +1,8 @@
 jQuery(function ($) {
-  $('.inview')
-    .not('html, body')
+  const notElement =
+    'html,body,section,h1,h2,h3,img,a,.no_inview,header,footer,main';
+  $('*')
+    .not(notElement)
     .on('inview', function (event, isInView, visiblePartX, visiblePartY) {
       if (isInView) {
         $(this).stop().addClass('active');
