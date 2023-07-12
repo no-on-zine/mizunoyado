@@ -6,7 +6,7 @@ header {
 
         >div {
             &:first-child {
-                background: url(../../images/main_visual.jpg) no-repeat center/cover;
+                background: url(../../images/main_visual.jpg) no-repeat 0 0/cover;
                 width: 100%;
                 height: calc(var(--vh, 1vh)*100);
 
