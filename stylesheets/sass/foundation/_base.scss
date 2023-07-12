@@ -30,6 +30,10 @@ a {
     }
 }
 
+img {
+    object-fit: cover;
+}
+
 .video-container,
 .wp-embed-aspect-16-9 {
     position: relative;
