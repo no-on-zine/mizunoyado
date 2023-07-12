@@ -48,7 +48,9 @@ footer {
                     margin: 0 0 2rem;
 
                     +img {
-                        scale: 1.5;
+                        @include mq {
+                            scale: 1.5;
+                        }
                     }
                 }
             }
