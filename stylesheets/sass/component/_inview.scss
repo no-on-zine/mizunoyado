@@ -2,7 +2,7 @@
     transition: .5s;
 }
 
-*:not(html, body, section, h1, h2, img, a, header, footer, main, .no_inview) {
+*:not(html, body, section, h1, h2, img, a, header, footer, main, br, .no_inview) {
     opacity: 0;
     translate: 0 10px;
 }

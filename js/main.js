@@ -1,6 +1,6 @@
 jQuery(function ($) {
   const notElement =
-    'html,body,section,h1,h2,img,a,header,footer,main,.no_inview';
+    'html,body,section,h1,h2,img,a,header,footer,main,br,.no_inview';
   $('*')
     .not(notElement)
     .on('inview', function (event, isInView, visiblePartX, visiblePartY) {
