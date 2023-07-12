@@ -45,6 +45,7 @@ footer {
             right: 0;
             max-width: 8rem;
             box-shadow: 0 0 5px 0px #0000001c;
+            z-index: 5;
 
             @include mq {
                 max-width: 13rem;
