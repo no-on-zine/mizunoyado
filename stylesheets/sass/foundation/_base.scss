@@ -106,7 +106,7 @@ a {
 
         &.ul {
             font-size: 1.8rem;
-            text-decoration: underline 0.3rem;
+            text-decoration: underline;
             text-underline-offset: 0.2rem;
 
             @include mq {
