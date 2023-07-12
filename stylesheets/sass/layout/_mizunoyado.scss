@@ -15,8 +15,10 @@
         }
 
         >div {
-            max-width: 70rem;
-            margin: auto;
+            @include mq(md) {
+                max-width: 70rem;
+                margin: auto;
+            }
         }
 
         .img_flex {
