@@ -32,4 +32,11 @@
             }
         }
     }
+
+    .nolink {
+        pointer-events: none;
+        text-decoration-line: none;
+        color: inherit !important;
+        cursor: auto;
+    }
 }
