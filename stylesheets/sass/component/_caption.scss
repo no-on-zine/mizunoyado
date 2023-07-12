@@ -16,6 +16,10 @@
         padding: 3rem 0;
     }
 
+    @include mq(md) {
+        width: clamp(40rem, 50vw, 65rem);
+    }
+
     img {
         @include mq {
             scale: 2;

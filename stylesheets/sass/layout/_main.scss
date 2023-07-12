@@ -2,4 +2,8 @@
 
 section {
     background: url(../../../images/bg.jpg) repeat 0 0/200%;
+
+    @include mq(md) {
+        background-size: 50%;
+    }
 }

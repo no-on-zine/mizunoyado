@@ -24,6 +24,12 @@
                 width: calc(100% - 16rem);
                 gap: 6rem;
             }
+
+            @include mq(md) {
+                font-size: 2rem;
+                gap: 4rem;
+                max-width: 70rem;
+            }
         }
     }
 }

@@ -18,6 +18,10 @@
             padding: 10rem 0;
         }
 
+        @include mq(md) {
+            max-width: 70rem;
+        }
+
         h3 {
             margin: 0 0 5rem;
 

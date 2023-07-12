@@ -9,12 +9,14 @@
             position: absolute;
             width: 100%;
             border-style: solid;
-        }
-
-        &::before {
             bottom: 100%;
             border-width: 7rem 100vw 0 0;
             border-color: rgba(0, 0, 0, 0) rgba(255, 255, 255, .8) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+        }
+
+        >div {
+            max-width: 70rem;
+            margin: auto;
         }
 
         .img_flex {
@@ -23,9 +25,17 @@
             justify-content: center;
             gap: 2rem;
 
+            @include mq(md) {
+                justify-content: space-between;
+            }
+
             >div {
                 &:nth-child(3n+1) {
                     width: calc(100% - 4rem);
+
+                    @include mq(md) {
+                        width: 100%;
+                    }
                 }
 
                 &:nth-child(2),

@@ -4,6 +4,10 @@ footer {
     background: url(../../../images/bg.jpg) repeat 0 0/200%;
     padding: 10rem 0 30rem;
 
+    @include mq(md) {
+        background-size: 50%;
+    }
+
     >div {
 
         &:first-child {
@@ -26,6 +30,11 @@ footer {
                 width: calc(100% - 16rem);
                 gap: 6rem;
                 padding: 10rem 0;
+            }
+
+            @include mq(md) {
+                font-size: 2rem;
+                max-width: 70rem;
             }
         }
 

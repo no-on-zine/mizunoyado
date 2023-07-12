@@ -7,6 +7,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
 
+            @include mq(md) {
+                max-width: 70rem;
+                margin: auto;
+            }
+
             >div {
                 width: calc((100% - 1rem)/2);
 
@@ -26,8 +31,21 @@
         }
 
         .img_wrap {
+
+            @include mq(md) {
+                text-align: center;
+            }
+
             img {
                 height: auto;
+
+                @include mq(md) {
+                    height: clamp(40rem, 100vh, 80rem);
+                }
+            }
+
+            +.caption {
+                width: clamp(40rem, 50vw, 55rem);
             }
         }
     }
