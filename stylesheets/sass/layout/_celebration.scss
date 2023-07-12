@@ -1,0 +1,21 @@
+@use "../global/index"as *;
+
+#celebration {
+    >div {
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+        padding: 5rem 4rem;
+        width: calc(100% - 6rem);
+        margin: 0 auto 8rem;
+        text-align: center;
+        letter-spacing: 0.05rem;
+
+        h3 {
+            +div {
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+            }
+        }
+    }
+}

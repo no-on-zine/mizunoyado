@@ -70,6 +70,22 @@ a {
         &.bold {
             font-weight: 900;
         }
+
+        &.ul {
+            font-size: 1.8rem;
+            text-decoration: underline 0.3rem;
+            text-underline-offset: 0.2rem;
+        }
+
+        span {
+            &.bold {
+                font-weight: 900;
+            }
+
+            &.fs_2 {
+                font-size: 2rem;
+            }
+        }
     }
 }
 
