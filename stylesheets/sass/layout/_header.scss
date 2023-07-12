@@ -20,6 +20,11 @@ header {
                 position: absolute;
                 top: 50%;
                 left: 5vw;
+
+                @include mq {
+                    scale: 1.5;
+                    transform-origin: 0% 50%;
+                }
             }
 
             &:last-child {
@@ -28,6 +33,10 @@ header {
                 position: absolute;
                 bottom: 0;
                 height: 12vh;
+
+                @include mq {
+                    height: 17vh;
+                }
 
                 @include mq(md) {
                     display: none;

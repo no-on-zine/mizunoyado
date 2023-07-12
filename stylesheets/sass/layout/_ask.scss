@@ -16,6 +16,11 @@
                 flex-direction: column;
                 gap: 5rem;
                 letter-spacing: 0.05rem;
+
+                @include mq {
+                    padding: 8rem 8rem;
+                    width: calc(100% - 8rem);
+                }
             }
         }
     }

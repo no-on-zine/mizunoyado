@@ -20,6 +20,13 @@ footer {
             gap: 5rem;
             box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
             font-weight: 600;
+
+            @include mq {
+                font-size: 2.4rem;
+                width: calc(100% - 16rem);
+                gap: 6rem;
+                padding: 10rem 0;
+            }
         }
 
         >a {
@@ -29,12 +36,20 @@ footer {
             right: 0;
             max-width: 8rem;
             box-shadow: 0 0 5px 0px #0000001c;
+
+            @include mq {
+                max-width: 13rem;
+            }
         }
 
         >div {
             &:last-child {
                 p {
                     margin: 0 0 2rem;
+
+                    +img {
+                        scale: 1.5;
+                    }
                 }
             }
         }

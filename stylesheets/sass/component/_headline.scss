@@ -12,6 +12,10 @@ h2 {
     gap: 1.5rem;
     margin: 0 0 5rem;
 
+    @include mq {
+        gap: 2.5rem;
+    }
+
     span {
         align-self: flex-start;
         background: rgb(255 255 255 / 90%);
@@ -20,9 +24,16 @@ h2 {
         font-weight: 900;
         box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
 
+        @include mq {
+            font-size: 5.5rem;
+        }
 
         &.big {
             font-size: 4rem;
+
+            @include mq {
+                font-size: 10rem;
+            }
         }
     }
 }
@@ -36,6 +47,10 @@ h3 {
     z-index: 1;
     margin: 0 0 2rem;
 
+    @include mq {
+        font-size: 4rem;
+    }
+
     &.white {
         background: rgb(255 255 255 / 80%);
         margin: 0;
@@ -44,6 +59,10 @@ h3 {
 
     &.fs_2 {
         font-size: 2.2rem;
+
+        @include mq {
+            font-size: 4rem;
+        }
     }
 
     span {
@@ -57,4 +76,8 @@ h4 {
     text-underline-offset: 0.6rem;
     margin: 0 0 1.5rem;
     font-size: 1.8rem;
+
+    @include mq {
+        font-size: 2.4rem;
+    }
 }
