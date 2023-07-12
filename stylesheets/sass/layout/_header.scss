@@ -6,7 +6,7 @@ header {
 
         >div {
             &:first-child {
-                background: url(../../images/main_visual.jpg) no-repeat 0 0/cover;
+                background: url(../../images/main_visual.jpg) no-repeat 50% 0/cover;
                 width: 100%;
                 height: calc(var(--vh, 1vh)*100);
 
@@ -23,7 +23,7 @@ header {
             }
 
             &:last-child {
-                background: url(../../images/cover_bottom.svg) no-repeat center/cover;
+                background: url(../../images/cover_bottom.svg) no-repeat 0 0/cover;
                 width: 100%;
                 position: absolute;
                 bottom: 0;
