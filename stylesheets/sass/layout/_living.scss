@@ -45,7 +45,9 @@
             }
 
             +.caption {
-                width: clamp(40rem, 50vw, 55rem);
+                @include mq(md) {
+                    width: clamp(40rem, 50vw, 55rem);
+                }
             }
         }
     }
