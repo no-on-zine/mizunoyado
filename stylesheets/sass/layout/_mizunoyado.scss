@@ -15,9 +15,11 @@
         }
 
         >div {
-            @include mq(md) {
-                max-width: 70rem;
-                margin: auto;
+            &:not(:last-child) {
+                @include mq(md) {
+                    max-width: 70rem;
+                    margin: auto;
+                }
             }
         }
 
